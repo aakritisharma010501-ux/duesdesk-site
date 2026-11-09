@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>DuesDesk – Brochure</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
+<style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+@media screen { body { background: #e7eeef; padding: 24px 0; } .page { margin: 0 auto 24px; box-shadow: 0 4px 24px rgba(0,0,0,.12); background:#fff; } }
+body { margin: 0; font-family: Inter, "DejaVu Sans", sans-serif; color: #13232b; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { width: 210mm; height: 297mm; position: relative; overflow: hidden; page-break-after: always; }
+.page:last-child { page-break-after: auto; }
+h1, h2, h3 { margin: 0; letter-spacing: -0.01em; }
+p { margin: 0; }
+.dark { background: #0e2a33; color: #fff; }
+.eyebrow { font-size: 8.5pt; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #f2b544; }
+.teal { color: #0b5d5a; }
+.muted { color: #3d5560; }
+
+/* Page 1 */
+.hero { padding: 12mm 16mm 9mm; }
+.brand { display: flex; align-items: center; gap: 8px; margin-bottom: 8mm; }
+.brand span { font-size: 17pt; font-weight: 800; color: #fff; }
+.hero h1 { font-size: 24pt; line-height: 1.12; font-weight: 800; margin: 4mm 0 5mm; max-width: 165mm; }
+.hero .lead { font-size: 11.5pt; line-height: 1.55; color: #c9dadd; max-width: 160mm; }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5mm; padding: 7mm 16mm 0; }
+.stat { border: 1px solid #dfe8e9; border-radius: 4mm; padding: 4mm; }
+.stat .n { font-size: 17pt; font-weight: 800; color: #0b5d5a; margin-bottom: 1.5mm; }
+.stat p { font-size: 8.5pt; line-height: 1.45; color: #3d5560; }
+.section { padding: 6.5mm 16mm 0; }
+.section h2 { font-size: 15pt; font-weight: 800; margin: 2mm 0 4mm; }
+.svc { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+.card { background: #f5f8f8; border-radius: 4mm; padding: 4.5mm; }
+.card h3 { font-size: 11.5pt; font-weight: 700; margin-bottom: 2mm; }
+.card p.sub { font-size: 8.8pt; color: #3d5560; margin-bottom: 2.5mm; line-height: 1.45; }
+ul { margin: 0; padding-left: 4.5mm; }
+li { font-size: 8.7pt; line-height: 1.45; color: #13232b; margin-bottom: 0.6mm; }
+.schemes { display: flex; flex-wrap: wrap; gap: 2mm; margin-top: 3mm; }
+.pill { font-size: 7.8pt; font-weight: 600; background: #0e2a33; color: #fff; border-radius: 10mm; padding: 1.2mm 3mm; }
+.foot1 { position: absolute; bottom: 0; left: 0; right: 0; padding: 4.5mm 16mm; background: #0a1f26; color: #9fb6ba; font-size: 8pt; display: flex; justify-content: space-between; }
+
+/* Page 2 */
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; }
+.step { border-top: 1mm solid #0b5d5a; padding-top: 3mm; }
+.step .k { font-size: 8pt; font-weight: 700; color: #0b5d5a; letter-spacing: 0.08em; }
+.step h3 { font-size: 10.5pt; font-weight: 700; margin: 1mm 0 1.5mm; }
+.step p { font-size: 8.5pt; line-height: 1.45; color: #3d5560; }
+.plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; }
+.plan { border: 1px solid #d3e0e2; border-radius: 4mm; padding: 5mm; }
+.plan.feature { background: #0e2a33; color: #fff; border-color: #0e2a33; }
+.plan .tier { font-size: 8pt; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #0b5d5a; }
+.plan.feature .tier { color: #f2b544; }
+.plan .price { font-size: 19pt; font-weight: 800; margin: 2mm 0 1.5mm; }
+.plan .price small { font-size: 9pt; font-weight: 500; }
+.plan p { font-size: 8.6pt; line-height: 1.45; color: #3d5560; }
+.plan.feature p { color: #c9dadd; }
+.success { margin-top: 4mm; border: 0.6mm solid #0b5d5a; border-radius: 4mm; padding: 4mm 5mm; font-size: 9pt; line-height: 1.5; }
+.success b { color: #0b5d5a; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+.box { background: #f5f8f8; border-radius: 4mm; padding: 5mm; }
+.box h3 { font-size: 11pt; font-weight: 700; margin-bottom: 2mm; }
+.box p { font-size: 8.8pt; line-height: 1.5; color: #3d5560; }
+.offer { margin: 6mm 16mm 0; background: #f2b544; border-radius: 4mm; padding: 6mm 7mm; }
+.offer h2 { font-size: 15pt; font-weight: 800; margin-bottom: 2mm; }
+.offer p { font-size: 9.5pt; line-height: 1.5; }
+.contact { position: absolute; bottom: 0; left: 0; right: 0; padding: 7mm 16mm 6mm; }
+.contact .row { display: flex; justify-content: space-between; align-items: flex-end; }
+.contact h3 { font-size: 13pt; font-weight: 800; margin-bottom: 2mm; }
+.contact p { font-size: 9.5pt; line-height: 1.6; color: #c9dadd; }
+.contact .small { font-size: 7.5pt; color: #9fb6ba; margin-top: 4mm; line-height: 1.5; }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page">
+  <div class="dark hero">
+    <div class="brand">
+      <svg width="26" height="26" viewBox="0 0 30 30"><rect x="1" y="1" width="28" height="28" rx="7" fill="none" stroke="#f2b544" stroke-width="2"/><path d="M9 15.5l4 4 8-9" fill="none" stroke="#f2b544" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>DuesDesk</span>
+    </div>
+    <p class="eyebrow">Scheme claims recovery &amp; compliance for hospitals</p>
+    <h1>Get paid in full for the care you deliver under government schemes.</h1>
+    <p class="lead">DuesDesk works alongside your billing team to track, follow up and recover pending, rejected and short-paid scheme bills, and keeps your licences and records current, so your team can stay focused on patients.</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="n">₹1.21 lakh cr</div><p>reported as outstanding to hospitals on PM-JAY claims, in an RTI reply from the National Health Authority</p></div>
+    <div class="stat"><div class="n">6–8 months</div><p>average payment delay hospitals report, according to the Association of Healthcare Providers of India</p></div>
+    <div class="stat"><div class="n">30 days</div><p>the usual window under PM-JAY guidelines to appeal a rejected claim. Miss it and the money is usually gone.</p></div>
+  </div>
+
+  <div class="section">
+    <p class="eyebrow teal">What we do</p>
+    <h2>Two services, one desk</h2>
+    <div class="svc">
+      <div class="card">
+        <h3>Claims recovery</h3>
+        <p class="sub">Every pending, queried, deducted or rejected scheme bill, followed up until it is resolved.</p>
+        <ul>
+          <li>Complete reconciliation: bills submitted vs. payments received</li>
+          <li>Query replies and re-submissions with the right documents, on time</li>
+          <li>Representations against incorrect deductions, citing the applicable rules</li>
+          <li>Appeals filed within deadlines; escalation of long-pending dues</li>
+          <li>Consolidated dues file, ready for management and auditors</li>
+        </ul>
+        <div class="schemes"><span class="pill">CGHS</span><span class="pill">ECHS</span><span class="pill">Ayushman Bharat / PM-JAY</span><span class="pill">State schemes</span></div>
+      </div>
+      <div class="card">
+        <h3>Compliance desk</h3>
+        <p class="sub">One compliance calendar for your facility, with supporting records kept inspection-ready.</p>
+        <ul>
+          <li>Clinical Establishments registration, fire NOC, pollution board consents and renewals</li>
+          <li>Biomedical waste authorisation, annual returns and records</li>
+          <li>PCPNDT registration, Form F records and reporting</li>
+          <li>Patient-data handling aligned with the DPDP Act, 2023</li>
+          <li>Complaint, incident and staff records maintained and organised</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="card" style="background:#0e2a33;color:#fff">
+      <h3 style="color:#fff">When something goes wrong, your records are ready</h3>
+      <p class="sub" style="color:#c9dadd;margin:0">A negligence notice, a consumer complaint, a licence query, a staff dispute or long-unpaid dues: in each case, outcomes depend on documentation. We compile the complete, organised record (case files, consents, registers, correspondence and timelines) so your management and professional advisers have everything they need from day one.</p>
+    </div>
+  </div>
+
+  <div class="foot1"><span>duesdesk-site.vercel.app</span><span>Delhi NCR · Haryana</span></div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+  <div class="section" style="padding-top:11mm">
+    <p class="eyebrow teal">How we work</p>
+    <h2>Fully remote, alongside your existing team</h2>
+    <div class="steps">
+      <div class="step"><div class="k">STEP 1</div><h3>Free review</h3><p>We review your oldest pending and deducted bills and show you what is recoverable, and why.</p></div>
+      <div class="step"><div class="k">STEP 2</div><h3>Master tracker</h3><p>Every bill reconciled in one place: amount, status, age, query or deduction reason.</p></div>
+      <div class="step"><div class="k">STEP 3</div><h3>Act and follow up</h3><p>Missing documents arranged, queries answered, deductions contested, old dues escalated.</p></div>
+      <div class="step"><div class="k">STEP 4</div><h3>Monthly report</h3><p>One page: pending by age, amounts recovered, deductions reversed, issues resolved.</p></div>
+    </div>
+    <p style="font-size:8.5pt;color:#5a6f78;margin-top:4mm;line-height:1.5">All submissions are made from your hospital's own login. We never ask for portal passwords.</p>
+  </div>
+
+  <div class="section">
+    <p class="eyebrow teal">Pricing</p>
+    <h2>Plans from ₹5,000 a month</h2>
+    <div class="plans">
+      <div class="plan"><div class="tier">Starter</div><div class="price">₹5,000<small> / month</small></div><p>Up to about 25 scheme bills a month. Best for small nursing homes.</p></div>
+      <div class="plan feature"><div class="tier">Standard</div><div class="price">₹12,000<small> / month</small></div><p>Up to about 75 scheme bills a month. For growing hospitals.</p></div>
+      <div class="plan"><div class="tier">Custom</div><div class="price">Let's talk</div><p>For larger hospitals. Quoted after a free review of your pending bills.</p></div>
+    </div>
+    <div class="success"><b>Success fee on all plans, only when we win:</b> about 10% of deducted or rejected amounts that get reversed after our follow-up. Nothing on your regular payments. Plus GST. Cancel anytime with 30 days' notice. Compliance desk quoted separately.</div>
+  </div>
+
+  <div class="section">
+    <div class="two">
+      <div class="box"><h3>What we promise, and what we don't</h3><p>Every bill tracked, every deadline met, every month reported. We can't guarantee payment: release of funds depends on the scheme authority and its budget. We make sure nothing is left un-chased.</p></div>
+      <div class="box"><h3>Your data stays protected</h3><p>We work under a signed service agreement and a confidentiality and data-processing agreement. Patient information is used only for your claims and compliance, access-controlled, and deleted on schedule.</p></div>
+    </div>
+  </div>
+
+  <div class="offer">
+    <h2>Start with a free review</h2>
+    <p>Share a list of your oldest pending or deducted scheme bills. Within 2–3 working days we'll send a one-page report showing how much is stuck, why, and what can be recovered. No charge, no commitment.</p>
+  </div>
+
+  <div class="dark contact">
+    <div class="row">
+      <div>
+        <h3>Talk to us</h3>
+        <p>Archita Sharma, Head of Operations<br>+91 98910 74582 (call / WhatsApp)<br>hello.duesdesk@gmail.com · duesdesk-site.vercel.app</p>
+      </div>
+      <svg width="40" height="40" viewBox="0 0 30 30"><rect x="1" y="1" width="28" height="28" rx="7" fill="none" stroke="#f2b544" stroke-width="2"/><path d="M9 15.5l4 4 8-9" fill="none" stroke="#f2b544" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <p class="small">DuesDesk is an independent company and is not part of, or affiliated with, the National Health Authority, CGHS, ECHS, any State Health Agency or any government body. © 2026 DuesDesk. All rights reserved.</p>
+  </div>
+</div>
+
+</body>
+</html>
