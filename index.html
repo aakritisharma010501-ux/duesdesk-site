@@ -1,212 +1,163 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DuesDesk – Ayushman Bharat claims support for hospitals</title>
-<meta name="description" content="DuesDesk helps hospitals across India recover pending, rejected and short-paid government scheme claims and stay compliant.">
+<title>DuesDesk NRI — Property, inheritance and money in India, handled from abroad</title>
+<meta name="description" content="DuesDesk NRI helps Non-Resident Indians protect and recover property, inheritance, shares and money in India — documents, government offices and follow-up handled for you. Free case assessment on WhatsApp.">
+<meta property="og:title" content="DuesDesk NRI — Your property and money in India, handled from abroad">
+<meta property="og:description" content="Inheritance transfers, property sales, unclaimed shares, tax refunds and money transfers for NRIs. Free case assessment on WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:Inter,system-ui,sans-serif;color:#13232b;background:#ffffff}
-a{color:#0b5d5a}a:hover{color:#083f3d}
-h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif}
+:root{--ink:#14232b;--muted:#5b6b72;--line:#e3e8e6;--bg:#faf8f4;--card:#fff;--teal:#0b5d5a;--sand:#f1ebe0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+a{color:var(--teal)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:0;background:rgba(250,248,244,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:Fraunces,serif;font-weight:650;font-size:22px;color:var(--ink);text-decoration:none}
+.logo span{color:var(--teal)}
+nav a{margin-left:22px;text-decoration:none;color:var(--muted);font-size:15px}
+nav a.cta{background:var(--teal);color:#fff;padding:9px 16px;border-radius:999px}
+@media(max-width:720px){nav a:not(.cta){display:none}}
+.hero{padding:76px 22px 60px}
+.eyebrow{display:inline-block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);font-weight:600;margin-bottom:16px}
+h1{font-family:Fraunces,serif;font-weight:650;font-size:clamp(34px,5.2vw,56px);line-height:1.08;max-width:820px}
+.lead{font-size:19px;color:var(--muted);max-width:640px;margin:22px 0 30px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:#1f8f5a;color:#fff;text-decoration:none;font-weight:600;padding:15px 24px;border-radius:12px;font-size:17px;margin:0 10px 10px 0}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.trust{display:flex;flex-wrap:wrap;gap:22px;margin-top:30px;color:var(--muted);font-size:14px}
+.trust b{color:var(--ink)}
+section{padding:64px 0}
+h2{font-family:Fraunces,serif;font-weight:650;font-size:clamp(28px,3.6vw,38px);line-height:1.15;margin-bottom:12px}
+.sub{color:var(--muted);max-width:640px;margin-bottom:34px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h3{font-size:18px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15px}
+.card .q{font-family:Fraunces,serif;font-size:17px;color:var(--teal);margin-bottom:10px}
+.band{background:var(--sand)}
+.steps{counter-reset:s;display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.step{position:relative;padding-top:46px}
+.step:before{counter-increment:s;content:counter(s);position:absolute;top:0;left:0;width:34px;height:34px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-weight:600}
+.step h3{font-size:17px;margin-bottom:6px}
+.step p{color:var(--muted);font-size:15px}
+.split{display:grid;gap:22px;grid-template-columns:1fr 1fr}
+@media(max-width:760px){.split{grid-template-columns:1fr}}
+ul.tick{list-style:none}
+ul.tick li{padding:7px 0 7px 28px;position:relative;font-size:15px}
+ul.tick li:before{content:"";position:absolute;left:0;top:13px;width:14px;height:8px;border-left:2.5px solid var(--teal);border-bottom:2.5px solid var(--teal);transform:rotate(-45deg)}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--muted);margin-top:10px;font-size:15px}
+.final{background:var(--teal);color:#fff;border-radius:22px;padding:48px 34px;text-align:center}
+.final h2{color:#fff}
+.final p{color:#d6ebe9;max-width:560px;margin:0 auto 26px}
+.final .btn{background:#fff;color:var(--teal)}
+footer{padding:36px 0 80px;color:var(--muted);font-size:13.5px;border-top:1px solid var(--line);margin-top:40px}
+footer p{margin-bottom:8px;max-width:820px}
+.wa-float{position:fixed;right:18px;bottom:18px;background:#1f8f5a;color:#fff;border-radius:999px;padding:13px 18px;font-weight:600;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.18);z-index:9;font-size:15px}
 </style>
-<style>html{scroll-behavior:smooth}</style>
 </head>
 <body>
-<div style="width: 100%; box-sizing: border-box; background: #ffffff">
 
-<header style="background: #0e2a33; padding: 0 24px">
-<nav aria-label="Main" style="max-width: 1160px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0">
-<a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #ffffff">
-<svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect x="1" y="1" width="28" height="28" rx="7" fill="none" stroke="#f2b544" stroke-width="2"></rect><path d="M9 15.5l4 4 8-9" fill="none" stroke="#f2b544" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">DuesDesk</span>
-</a>
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px">
-<a href="#how" style="color: #d6e4e6; text-decoration: none; font-size: 15px">How it works</a>
-<a href="#compliance" style="color: #d6e4e6; text-decoration: none; font-size: 15px">Compliance</a>
-<a href="#pricing" style="color: #d6e4e6; text-decoration: none; font-size: 15px">Pricing</a>
-<a href="#contact" style="color: #d6e4e6; text-decoration: none; font-size: 15px">Contact</a>
-<a href="#contact" style="background: #f2b544; color: #13232b; text-decoration: none; font-weight: 600; font-size: 15px; padding: 12px 18px; border-radius: 8px">Talk to us</a>
-</div>
-</nav>
-</header>
+<header><div class="wrap">
+  <a class="logo" href="/">Dues<span>Desk</span> NRI</a>
+  <nav>
+    <a href="#help">What we handle</a>
+    <a href="#how">How it works</a>
+    <a href="#faq">FAQ</a>
+    <a class="cta" href="https://wa.me/919891074582?text=Hi%20DuesDesk%20NRI%2C%20I%27d%20like%20a%20free%20case%20assessment." target="_blank" rel="noopener">Free assessment</a>
+  </nav>
+</div></header>
 
-<section id="top" style="background: #0e2a33; padding: 72px 24px 96px">
-<div style="max-width: 1160px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
-<div style="flex: 999 1 560px; min-width: 0">
-<p style="margin: 0 0 16px; color: #f2b544; font-weight: 600; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase">PM-JAY claims management for private hospitals</p>
-<h1 style="margin: 0 0 20px; color: #ffffff; font-size: 52px; line-height: 1.1; font-weight: 700">Get paid in full for the Ayushman Bharat care you deliver.</h1>
-<p style="margin: 0 0 32px; color: #c9dadd; font-size: 19px; line-height: 1.6; max-width: 620px">DuesDesk audits your pending, rejected and short-paid PM-JAY claims, files appeals within the 30-day window and follows up every month, so your team can stay focused on patients.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 14px">
-<a href="#pricing" style="background: #f2b544; color: #13232b; text-decoration: none; font-weight: 600; font-size: 16px; padding: 15px 22px; border-radius: 8px">See pricing</a>
-<a href="#how" style="border: 1.5px solid #6f9aa0; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 16px; padding: 14px 22px; border-radius: 8px">How it works</a>
+<main>
+<div class="wrap hero">
+  <span class="eyebrow">For NRIs in the US, UK, Canada, Australia &amp; the Gulf</span>
+  <h1>Your property, inheritance and money in India — handled while you stay abroad.</h1>
+  <p class="lead">Transferring a parent's property, selling a flat, getting a tax refund, recovering old shares, moving money out of India. We handle the documents, the government offices and the follow-up — and keep you updated on your time zone.</p>
+  <a class="btn" href="https://wa.me/919891074582?text=Hi%20DuesDesk%20NRI%2C%20I%27d%20like%20a%20free%20case%20assessment." target="_blank" rel="noopener">Free case assessment on WhatsApp</a>
+  <a class="btn alt" href="mailto:hello.duesdesk@gmail.com?subject=Free%20case%20assessment">Email us</a>
+  <div class="trust">
+    <span><b>No flights to India</b> for most cases</span>
+    <span><b>Fixed fees</b> agreed in writing upfront</span>
+    <span><b>Regular updates</b> until it's done</span>
+  </div>
 </div>
-</div>
-<div style="flex: 1 1 340px; min-width: 0; background: #143a45; border: 1px solid #22525e; border-radius: 16px; padding: 28px; box-sizing: border-box">
-<p style="margin: 0 0 18px; color: #ffffff; font-weight: 600; font-size: 17px">What your first month looks like</p>
-<div style="display: flex; flex-direction: column; gap: 16px">
-<div style="display: flex; gap: 12px"><span style="flex: none; width: 28px; height: 28px; border-radius: 50%; background: #f2b544; color: #13232b; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center">1</span><p style="margin: 0; color: #d6e4e6; font-size: 15px; line-height: 1.5">A full list of every claim that is pending, rejected or cut, and how much money is stuck</p></div>
-<div style="display: flex; gap: 12px"><span style="flex: none; width: 28px; height: 28px; border-radius: 50%; background: #f2b544; color: #13232b; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center">2</span><p style="margin: 0; color: #d6e4e6; font-size: 15px; line-height: 1.5">Appeals filed, with the right documents, for every claim still inside the deadline</p></div>
-<div style="display: flex; gap: 12px"><span style="flex: none; width: 28px; height: 28px; border-radius: 50%; background: #f2b544; color: #13232b; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center">3</span><p style="margin: 0; color: #d6e4e6; font-size: 15px; line-height: 1.5">A one-page report on what we found and what happens next</p></div>
-</div>
-</div>
-</div>
-</section>
 
-<section aria-labelledby="problem-h" style="padding: 80px 24px; background: #f5f8f8">
-<div style="max-width: 1160px; margin: 0 auto">
-<h2 id="problem-h" style="margin: 0 0 12px; font-size: 36px; line-height: 1.2">Treating the patient is only half the work</h2>
-<p style="margin: 0 0 40px; font-size: 18px; line-height: 1.6; color: #3d5560; max-width: 720px">Hospitals across India report long payment delays and claims rejected over small paperwork gaps. A small hospital rarely has the time to chase every one.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px">
-<div style="background: #ffffff; border: 1px solid #dfe8e9; border-radius: 14px; padding: 28px">
-<p style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 40px; font-weight: 700; color: #0b5d5a">₹1.21 lakh crore</p>
-<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3d5560">reported as outstanding to hospitals on PM-JAY claims, in an RTI reply from the National Health Authority</p>
-</div>
-<div style="background: #ffffff; border: 1px solid #dfe8e9; border-radius: 14px; padding: 28px">
-<p style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 40px; font-weight: 700; color: #0b5d5a">6–8 months</p>
-<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3d5560">average payment delay that hospitals report, according to the Association of Healthcare Providers of India</p>
-</div>
-<div style="background: #ffffff; border: 1px solid #dfe8e9; border-radius: 14px; padding: 28px">
-<p style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 40px; font-weight: 700; color: #0b5d5a">30 days</p>
-<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3d5560">is the usual window under PM-JAY claim guidelines to appeal a rejected claim. Miss it and the money is usually gone.</p>
-</div>
-</div>
-</div>
-</section>
+<section id="help" class="band"><div class="wrap">
+  <h2>What NRIs come to us with</h2>
+  <p class="sub">If any of these sound familiar, you're not alone.</p>
+  <div class="grid">
+    <div class="card"><p class="q">"My father passed away and the house is still in his name."</p><h3>Inheritance &amp; property transfer</h3><p>Death certificates, legal heir certificate, mutation in land records, and transferring bank accounts, FDs and shares to the rightful heirs.</p></div>
+    <div class="card"><p class="q">"A relative is living in our house and won't leave."</p><h3>Property occupied by others</h3><p>We gather your ownership records, document the situation, and coordinate with an independent advocate you engage directly for any notices or proceedings.</p></div>
+    <div class="card"><p class="q">"I want to sell my flat in India but I can't fly down."</p><h3>Selling property from abroad</h3><p>Title and document checks, power of attorney done the right way, coordination with the buyer and the registry, and the paperwork to take the money abroad.</p></div>
+    <div class="card"><p class="q">"The buyer deducted over 20% tax on my sale."</p><h3>Property-sale tax refunds</h3><p>With a partner Chartered Accountant, we work out the tax actually owed, file for the excess and follow up until the refund is credited.</p></div>
+    <div class="card"><p class="q">"My parents had shares — I think they went to the government fund."</p><h3>Unclaimed shares &amp; dividends (IEPF)</h3><p>We search, collect the documents, coordinate with the company's registrar and file the claim — including claims by legal heirs.</p></div>
+    <div class="card"><p class="q">"My rent and sale money is stuck in my NRO account."</p><h3>Moving money out of India</h3><p>Source-of-funds papers, Forms 15CA/15CB through a partner CA, and follow-up with your bank's NRI desk until the money reaches your account abroad.</p></div>
+  </div>
+</div></section>
 
-<section id="how" aria-labelledby="how-h" style="padding: 80px 24px">
-<div style="max-width: 1160px; margin: 0 auto">
-<h2 id="how-h" style="margin: 0 0 12px; font-size: 36px; line-height: 1.2">How it works</h2>
-<p style="margin: 0 0 40px; font-size: 18px; line-height: 1.6; color: #3d5560; max-width: 720px">We work alongside your existing Ayushman desk. Your team keeps handling patients; we handle what happens after discharge.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
-<div style="border-top: 3px solid #0b5d5a; padding-top: 20px">
-<h3 style="margin: 0 0 10px; font-size: 21px">1. Audit</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3d5560">We go through your claims and list every one that is pending, rejected or paid short, with the amount and the reason.</p>
-</div>
-<div style="border-top: 3px solid #0b5d5a; padding-top: 20px">
-<h3 style="margin: 0 0 10px; font-size: 21px">2. Appeal</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3d5560">For rejected claims, we find what was missing (vitals charts, OT notes, reports) and file the appeal before the deadline.</p>
-</div>
-<div style="border-top: 3px solid #0b5d5a; padding-top: 20px">
-<h3 style="margin: 0 0 10px; font-size: 21px">3. Track</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3d5560">Every month we follow up on every claim and query, and send you a clear report: what is stuck, what got approved, what is next.</p>
-</div>
-<div style="border-top: 3px solid #0b5d5a; padding-top: 20px">
-<h3 style="margin: 0 0 10px; font-size: 21px">4. Train</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3d5560">Every quarter we show your staff which documents cause rejections, so fewer claims get stuck in the first place.</p>
-</div>
-</div>
-</div>
-</section>
+<section id="how"><div class="wrap">
+  <h2>How it works</h2>
+  <p class="sub">Simple, remote and on your schedule.</p>
+  <div class="steps">
+    <div class="step"><h3>Free case assessment</h3><p>Message us on WhatsApp or email. A short call at a time that suits your time zone.</p></div>
+    <div class="step"><h3>Clear plan &amp; fixed fee</h3><p>A written plan: documents needed, steps, a realistic timeline and our fee. No surprises.</p></div>
+    <div class="step"><h3>We do the running around</h3><p>Offices, registries, banks, companies and follow-ups handled in India. Signatures arranged through your local consulate where needed.</p></div>
+    <div class="step"><h3>Updates until it's done</h3><p>Regular updates, and a final summary with every document when your case closes.</p></div>
+  </div>
+</div></section>
 
-<section id="compliance" aria-labelledby="compliance-h" style="padding: 80px 24px; background: #0e2a33">
-<div style="max-width: 1160px; margin: 0 auto">
-<p style="margin: 0 0 12px; color: #f2b544; font-weight: 600; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase">Compliance desk</p>
-<h2 id="compliance-h" style="margin: 0 0 12px; font-size: 36px; line-height: 1.2; color: #ffffff">Licences, registers and records, kept current</h2>
-<p style="margin: 0 0 40px; font-size: 18px; line-height: 1.6; color: #c9dadd; max-width: 760px">Regulatory obligations for nursing homes and hospitals are numerous, and lapses tend to surface at the worst possible moment. We maintain a single compliance calendar for your facility and keep the supporting records inspection-ready.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px">
-<div style="background: #143a45; border: 1px solid #22525e; border-radius: 14px; padding: 26px">
-<h3 style="margin: 0 0 8px; font-size: 19px; color: #ffffff">Licences and renewals</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #c9dadd">Clinical Establishments registration, fire NOC, pollution board consents and other approvals, tracked against expiry with renewals prepared well in advance.</p>
-</div>
-<div style="background: #143a45; border: 1px solid #22525e; border-radius: 14px; padding: 26px">
-<h3 style="margin: 0 0 8px; font-size: 19px; color: #ffffff">Biomedical waste</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #c9dadd">Authorisation, annual returns and day-to-day records maintained in line with the Biomedical Waste Management Rules.</p>
-</div>
-<div style="background: #143a45; border: 1px solid #22525e; border-radius: 14px; padding: 26px">
-<h3 style="margin: 0 0 8px; font-size: 19px; color: #ffffff">Ultrasound-centre registers</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #c9dadd">PCPNDT registration, Form F records and periodic reporting kept complete, accurate and ready for inspection.</p>
-</div>
-<div style="background: #143a45; border: 1px solid #22525e; border-radius: 14px; padding: 26px">
-<h3 style="margin: 0 0 8px; font-size: 19px; color: #ffffff">Patient data</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #c9dadd">Consent formats, record-retention practices and data-handling processes aligned with the Digital Personal Data Protection Act, 2023.</p>
-</div>
-<div style="background: #143a45; border: 1px solid #22525e; border-radius: 14px; padding: 26px">
-<h3 style="margin: 0 0 8px; font-size: 19px; color: #ffffff">Complaint and incident records</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #c9dadd">A structured log of patient complaints, incidents and the hospital's responses, so a complete record is available whenever it is needed.</p>
-</div>
-<div style="background: #143a45; border: 1px solid #22525e; border-radius: 14px; padding: 26px">
-<h3 style="margin: 0 0 8px; font-size: 19px; color: #ffffff">Staff and dues files</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #c9dadd">Organised staff documentation and consolidated records of outstanding scheme dues, ready for your management, auditors and professional advisers.</p>
-</div>
-</div>
-<div style="margin-top: 24px; background: #f2b544; border-radius: 14px; padding: 28px 32px; color: #13232b">
-<h3 style="margin: 0 0 10px; font-size: 21px; color: #13232b">When something goes wrong, your records are ready</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #13232b">A negligence notice, a consumer complaint, a licence query, a staff dispute or long-unpaid dues: in each case, outcomes depend on documentation. We compile the complete, organised record (case files, consents, registers, correspondence and timelines) so your management and professional advisers have everything they need from day one.</p>
-</div>
-<p style="margin: 28px 0 0; font-size: 15px; line-height: 1.6; color: #9fb6ba; max-width: 760px">We work alongside your billing desk, chartered accountants and professional advisers. We prepare and maintain the records; decisions remain with your hospital.</p>
-</div>
-</section>
+<section class="band"><div class="wrap split">
+  <div>
+    <h2>What we do</h2>
+    <ul class="tick">
+      <li>Case assessment and a written step-by-step plan</li>
+      <li>Collecting, checking and organising your documents</li>
+      <li>Government offices, registries, land and municipal records</li>
+      <li>Banks, companies, share registrars and the IEPF Authority</li>
+      <li>Tax refunds and money transfers with partner Chartered Accountants</li>
+      <li>Updates on your time zone</li>
+    </ul>
+  </div>
+  <div>
+    <h2>When a lawyer is needed</h2>
+    <p style="color:var(--muted);margin-bottom:14px">Some cases — disputes, probate, succession certificates, eviction — need an advocate. DuesDesk is not a law firm and does not give legal advice.</p>
+    <ul class="tick">
+      <li>You engage an independent advocate of your choice directly</li>
+      <li>The advocate's fee is agreed and paid directly between you</li>
+      <li>We keep your documents ready and coordinate the paperwork side</li>
+    </ul>
+  </div>
+</div></section>
 
-<section id="pricing" aria-labelledby="pricing-h" style="padding: 80px 24px; background: #f5f8f8">
-<div style="max-width: 1160px; margin: 0 auto">
-<h2 id="pricing-h" style="margin: 0 0 12px; font-size: 36px; line-height: 1.2">Plans from ₹5,000 a month</h2>
-<p style="margin: 0 0 40px; font-size: 18px; line-height: 1.6; color: #3d5560; max-width: 720px">Your monthly fee depends on how many scheme bills you submit. Every plan includes claim tracking, query replies and re-submissions on time, follow-up until payment, and one simple monthly report.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px">
-<div style="background: #ffffff; border: 1px solid #d3e0e2; border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 10px">
-<p style="margin: 0; color: #0b5d5a; font-weight: 600; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase">Starter</p>
-<p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 40px; font-weight: 700">₹5,000<span style="font-size: 17px; font-weight: 500; color: #3d5560"> / month</span></p>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3d5560">Up to about 25 scheme bills a month. Best for small nursing homes.</p>
-</div>
-<div style="background: #0e2a33; color: #ffffff; border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 10px">
-<p style="margin: 0; color: #f2b544; font-weight: 600; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase">Standard</p>
-<p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 40px; font-weight: 700; color: #ffffff">₹12,000<span style="font-size: 17px; font-weight: 500; color: #c9dadd"> / month</span></p>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #c9dadd">Up to about 75 scheme bills a month. For growing hospitals.</p>
-</div>
-<div style="background: #ffffff; border: 1px solid #d3e0e2; border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 10px">
-<p style="margin: 0; color: #0b5d5a; font-weight: 600; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase">Custom</p>
-<p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 40px; font-weight: 700">Let's talk</p>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3d5560">For larger hospitals. Quoted after a free review of your pending bills.</p>
-</div>
-</div>
-<div style="margin-top: 20px; background: #ffffff; border: 2px solid #0b5d5a; border-radius: 14px; padding: 24px 28px">
-<p style="margin: 0 0 6px; color: #0b5d5a; font-weight: 600; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase">Success fee on all plans – only when we win</p>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3d5560">About 10% of deducted or rejected amounts that get reversed after our follow-up. Nothing on your regular payments.</p>
-</div>
-<p style="margin: 24px 0 0; font-size: 15px; color: #3d5560">Plus GST. Cancel anytime with 30 days' notice.</p>
-</div>
-</section>
+<section id="faq"><div class="wrap">
+  <h2>Questions NRIs ask</h2>
+  <p class="sub">General information only — every case is different, which is why the first assessment is free.</p>
+  <details><summary>Do I need to travel to India?</summary><p>For most cases, no. Documents that need your signature can usually be signed and attested at the Indian consulate or embassy where you live, or handled through a properly drafted power of attorney.</p></details>
+  <details><summary>Can an NRI inherit and sell property in India?</summary><p>Generally yes — NRIs can inherit residential and commercial property and sell it, subject to FEMA rules. Agricultural land has extra restrictions. We check your specific case in the free assessment.</p></details>
+  <details><summary>How much money can I send abroad from my NRO account?</summary><p>Up to USD 1 million per financial year from NRO balances, once taxes are paid, with Form 15CA and a CA certificate in Form 15CB.</p></details>
+  <details><summary>How do I know if my parents' shares went to IEPF?</summary><p>Shares move to the government's IEPF fund when dividends go unclaimed for seven consecutive years. A search by name and folio usually tells us within a day or two.</p></details>
+  <details><summary>How do you charge?</summary><p>A fixed fee for the work, agreed in writing before we start. For recoveries such as refunds and unclaimed shares, part of the fee can be linked to what is recovered. The first assessment is free.</p></details>
+</div></section>
 
-<section aria-labelledby="honest-h" style="padding: 80px 24px">
-<div style="max-width: 1160px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px">
-<div style="flex: 1 1 420px; min-width: 0">
-<h2 id="honest-h" style="margin: 0 0 16px; font-size: 32px; line-height: 1.2">What we promise, and what we don't</h2>
-<p style="margin: 0 0 14px; font-size: 16px; line-height: 1.6; color: #3d5560">We promise a defined job done on time: every claim audited, every appeal filed before its deadline, every month tracked and reported.</p>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #3d5560">We can't guarantee payment. When money is released is decided by the State Health Agency and its budget.</p>
+<div class="wrap">
+  <div class="final">
+    <h2>Tell us what's stuck in India.</h2>
+    <p>Send a short message — what the asset is, where it is, and what's happened so far. We'll reply with next steps, free.</p>
+    <a class="btn" href="https://wa.me/919891074582?text=Hi%20DuesDesk%20NRI%2C%20I%27d%20like%20a%20free%20case%20assessment." target="_blank" rel="noopener">WhatsApp us: +91 98910 74582</a>
+  </div>
+</div>
+</main>
 
-</div>
-<div style="flex: 1 1 420px; min-width: 0">
-<h2 style="margin: 0 0 16px; font-size: 32px; line-height: 1.2">Your data stays protected</h2>
-<p style="margin: 0 0 14px; font-size: 16px; line-height: 1.6; color: #3d5560">We work only under a signed data processing agreement and your written authorisation. Patient information is used only to process your claims, kept access-controlled, and deleted on schedule.</p>
-<p style="margin: 0; font-size: 14px; line-height: 1.6; color: #5a6f78">DuesDesk is an independent company. We are not part of, or affiliated with, the National Health Authority, any State Health Agency or any government body.</p>
-</div>
-</div>
-</section>
+<footer><div class="wrap">
+  <p><b>DuesDesk NRI</b> · hello.duesdesk@gmail.com · WhatsApp +91 98910 74582</p>
+  <p>DuesDesk is a documentation and case-coordination service. It is not a law firm and does not provide legal advice or legal representation. Where legal services are required, clients engage independent advocates directly. Tax filings and certifications are carried out by independent Chartered Accountants. Information on this website is general in nature and not a substitute for professional advice.</p>
+</div></footer>
 
-<section id="contact" aria-labelledby="contact-h" style="padding: 80px 24px; background: #0e2a33">
-<div style="max-width: 1160px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: space-between">
-<div style="flex: 999 1 520px; min-width: 0">
-<h2 id="contact-h" style="margin: 0 0 12px; font-size: 36px; line-height: 1.2; color: #ffffff">Find out how much of your money is stuck</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #c9dadd">Call, WhatsApp or email us. We work with hospitals across India by phone and video call.</p>
-</div>
-<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-<a href="tel:+919891074582" style="background: #f2b544; color: #13232b; text-decoration: none; font-weight: 600; font-size: 17px; padding: 16px 22px; border-radius: 8px; text-align: center">Call: +91 98910 74582</a>
-<a href="https://wa.me/919891074582" style="border: 1.5px solid #6f9aa0; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 17px; padding: 15px 22px; border-radius: 8px; text-align: center">WhatsApp us</a>
-<a href="mailto:hello.duesdesk@gmail.com" style="border: 1.5px solid #6f9aa0; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 17px; padding: 15px 22px; border-radius: 8px; text-align: center">hello.duesdesk@gmail.com</a>
-<p style="margin: 4px 0 0; color: #c9dadd; font-size: 15px; text-align: center">Team DuesDesk</p>
-</div>
-</div>
-</section>
-
-<footer style="background: #0a1f26; padding: 28px 24px">
-<div style="max-width: 1160px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px">
-<p style="margin: 0; color: #9fb6ba; font-size: 14px">© 2026 DuesDesk. All rights reserved.</p>
-<p style="margin: 0; color: #9fb6ba; font-size: 14px">Serving hospitals across India</p>
-</div>
-</footer>
-
-</div>
+<a class="wa-float" href="https://wa.me/919891074582?text=Hi%20DuesDesk%20NRI%2C%20I%27d%20like%20a%20free%20case%20assessment." target="_blank" rel="noopener">WhatsApp us</a>
 </body>
 </html>
